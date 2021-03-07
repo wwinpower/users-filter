@@ -1,0 +1,20 @@
+.Search {
+  max-width: 992px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 0;
+}
+.Search input {
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  padding: 17px 20px;
+  color: #222;
+}
+.Search button {
+  position: absolute;
+  margin: 6px;
+  right: 0;
+}
+
+/*# sourceMappingURL=Search.module.css.map */

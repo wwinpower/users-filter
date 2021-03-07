@@ -1,0 +1,15 @@
+.UserList{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+  gap: 21px;
+
+
+}
+
+h2.error {
+  color: indianred;
+  text-align: center;
+}
