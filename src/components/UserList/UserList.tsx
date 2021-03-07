@@ -6,7 +6,8 @@ import {
     searchUsersAdd,
     resetSearchData,
     modalAdd,
-    modalRemove
+    modalRemove,
+    deleteUser
 } from "../../store/action-creators/user";
 
 import classes from "./UserList.module.scss";
@@ -98,6 +99,14 @@ const UserList: React.FC = () => {
         dispatch(modalRemove())
     }
 
+    const removeUser = (id: number) => {
+        let arr = [...users];
+
+            arr = arr.filter((user)=> user.id !== id)
+
+        dispatch(deleteUser(arr))
+    }
+
     return (
         <>
             <section className={classes.search}>
@@ -116,6 +125,7 @@ const UserList: React.FC = () => {
                                             user={user}
                                             key={user.id}
                                             open={open}
+                                            removeUser={removeUser}
                                         />
                                     ))
                                     : users.map(user => (
@@ -123,6 +133,7 @@ const UserList: React.FC = () => {
                                             user={user}
                                             key={user.id}
                                             open={open}
+                                            removeUser={removeUser}
                                         />
                                     ))
 

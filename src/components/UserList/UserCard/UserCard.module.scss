@@ -9,6 +9,15 @@
   align-items: center;
   text-align: center;
   transition: 0.5s;
+  position: relative;
+
+  &-remove{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: red;
+    cursor: pointer;
+  }
   &__photo {
     width: 112px;
     height: 112px;

@@ -11,11 +11,12 @@ interface Props {
         street: string,
         companyName: string
     },
-    open:(value:number)=>void
+    open:(value:number)=>void,
+    removeUser:(value:number)=>void,
 }
 
 
-const UserCard = ({user:{id, name, username, email}, open}:Props) => {
+const UserCard = ({user:{id, name, username, email}, open, removeUser}:Props) => {
 
     const createMarkup = (html: any) => {
         return {__html: html}
@@ -24,6 +25,7 @@ const UserCard = ({user:{id, name, username, email}, open}:Props) => {
     return (
         <>
             <article className={classes.Card}>
+                <i className={'fas fa-times '+ classes['Card-remove']} onClick={()=>removeUser(id)}/>
                 <small dangerouslySetInnerHTML={createMarkup(username)}/>
                 <figure>
                     <img className={classes['Card__photo']}

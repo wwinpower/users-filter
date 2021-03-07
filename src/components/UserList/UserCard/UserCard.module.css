@@ -9,6 +9,14 @@
   align-items: center;
   text-align: center;
   transition: 0.5s;
+  position: relative;
+}
+.Card-remove {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: red;
+  cursor: pointer;
 }
 .Card__photo {
   width: 112px;

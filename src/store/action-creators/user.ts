@@ -48,7 +48,10 @@ export const searchUsersAdd = (arr: any[]) => {
 export const resetSearchData = () => {
     return async (dispatch: Dispatch<UserAction>) => {
         try {
-            dispatch({type: UserActionTypes.FETCH_USERS_SEARCH_RESET})
+            dispatch({type: UserActionTypes.FETCH_USERS_SEARCH_RESET});
+
+            const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+            dispatch({type: UserActionTypes.FETCH_USERS_SUCCESS, payload: response.data});
 
         } catch (err) {
             dispatch({type: UserActionTypes.FETCH_USERS_ERROR, payload: 'Error deleting data !'})
@@ -77,6 +80,17 @@ export const modalRemove = () => {
 
         } catch (err) {
             dispatch({type: UserActionTypes.FETCH_USERS_ERROR, payload: 'Error deleting a modal window !'})
+        }
+    }
+}
+
+
+export const deleteUser = (value: any[]) => {
+    return async (dispatch: Dispatch<UserAction>) => {
+        try {
+            dispatch({type: UserActionTypes.FETCH_USERS_SUCCESS, payload: value})
+        } catch (err) {
+            dispatch({type: UserActionTypes.FETCH_USERS_ERROR, payload: 'Error when searching for data !'})
         }
     }
 }
