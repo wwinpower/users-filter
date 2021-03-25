@@ -26,6 +26,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vladi.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -116,7 +117,7 @@
       <workItem from="1615192394839" duration="116000" />
       <workItem from="1615417504617" duration="39000" />
       <workItem from="1616676053230" duration="218000" />
-      <workItem from="1616676776664" duration="4651000" />
+      <workItem from="1616676776664" duration="4962000" />
     </task>
     <servers />
   </component>
