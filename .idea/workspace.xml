@@ -3,12 +3,65 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6254424-0ddd-432d-beca-9cc10facfce3" name="Default Changelist" comment="" />
+    <list default="true" id="f6254424-0ddd-432d-beca-9cc10facfce3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vladi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserCard/UserCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserList.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserList.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserList/UserList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList/UserList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/action-creators/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/action-creators/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/userReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/userReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/user.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/components/UserList/UserList.tsx" root0="SKIP_HIGHLIGHTING" />
@@ -19,17 +72,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-search-bar-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\vladi\OneDrive\Рабочий стол\Задание\React\user-app-filter\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -54,12 +112,28 @@
       <workItem from="1614800256349" duration="26000" />
       <workItem from="1614800307489" duration="13000" />
       <workItem from="1614800569686" duration="109000" />
-      <workItem from="1614800709989" duration="53992000" />
+      <workItem from="1614800709989" duration="54998000" />
+      <workItem from="1615192394839" duration="116000" />
+      <workItem from="1615417504617" duration="39000" />
+      <workItem from="1616676053230" duration="218000" />
+      <workItem from="1616676776664" duration="4651000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="329" key="#Custom_Plugin_Repositories" timestamp="1614800046774">
@@ -86,19 +160,35 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="469" y="208" key="EditFileWatcherDialog/0.0.1600.860@0.0.1600.860" timestamp="1614809464254" />
-    <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1614869544523">
+    <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1615192510126">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1614869544523" />
+    <state x="580" y="171" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1615192510126" />
     <state x="624" y="350" key="Github.CreateGistDialog" timestamp="1615146682247">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="624" y="350" key="Github.CreateGistDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1615146682247" />
-    <state x="301" y="75" key="SettingsEditor" timestamp="1615146753159">
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1616676508855">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1616676508855" />
+    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1616676508854">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1616676508854" />
+    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1616676508854">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1616676508854" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1616676508855">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1616676508855" />
+    <state x="301" y="75" key="SettingsEditor" timestamp="1616677797354">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="75" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1615146753159" />
-    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1614800669143" />
+    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1616677797354" />
     <state x="456" y="195" key="run.anything.popup" timestamp="1614985577787">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

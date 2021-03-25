@@ -1,4 +1,4 @@
-.boxes {
+.loader {
   --size: 32px;
   --duration: 800ms;
   height: calc(var(--size) * 2);
@@ -10,7 +10,7 @@
   transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
   top: 100px;
 }
-.boxes .box {
+.loader__element {
   width: var(--size);
   height: var(--size);
   top: 0;
@@ -18,23 +18,23 @@
   position: absolute;
   transform-style: preserve-3d;
 }
-.boxes .box:nth-child(1) {
+.loader__element:nth-child(1) {
   transform: translate(100%, 0);
   animation: box1 var(--duration) linear infinite;
 }
-.boxes .box:nth-child(2) {
+.loader__element:nth-child(2) {
   transform: translate(0, 100%);
   animation: box2 var(--duration) linear infinite;
 }
-.boxes .box:nth-child(3) {
+.loader__element:nth-child(3) {
   transform: translate(100%, 100%);
   animation: box3 var(--duration) linear infinite;
 }
-.boxes .box:nth-child(4) {
+.loader__element:nth-child(4) {
   transform: translate(200%, 0);
   animation: box4 var(--duration) linear infinite;
 }
-.boxes .box > div {
+.loader__element > div {
   --background: #5C8DF6;
   --top: auto;
   --right: auto;
@@ -53,20 +53,20 @@
   left: var(--left);
   transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
 }
-.boxes .box > div:nth-child(1) {
+.loader__element > div:nth-child(1) {
   --top: 0;
   --left: 0;
 }
-.boxes .box > div:nth-child(2) {
+.loader__element > div:nth-child(2) {
   --background: #145af2;
   --right: 0;
   --rotateY: 90deg;
 }
-.boxes .box > div:nth-child(3) {
+.loader__element > div:nth-child(3) {
   --background: #447cf5;
   --rotateX: -90deg;
 }
-.boxes .box > div:nth-child(4) {
+.loader__element > div:nth-child(4) {
   --background: #DBE3F4;
   --top: 0;
   --left: 0;

@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.11",
-    "remote-redux-devtools": "^0.5.16"
+    "remote-redux-devtools": "^0.5.16",
+    "tslint": "^6.1.3"
   }
 }

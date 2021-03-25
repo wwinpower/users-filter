@@ -3,26 +3,26 @@ import classes from './Loader.module.scss';
 
 function Loader() {
     return (
-        <div className={classes['boxes']}>
-            <div className={classes['box']}>
+        <div className={classes['loader']}>
+            <div className={classes['loader__element']}>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div className={classes['box']}>
+            <div className={classes['loader__element']}>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div className={classes['box']}>
+            <div className={classes['loader__element']}>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div className={classes['box']}>
+            <div className={classes['loader__element']}>
                 <div></div>
                 <div></div>
                 <div></div>

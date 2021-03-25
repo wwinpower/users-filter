@@ -1,4 +1,4 @@
-.UserList {
+.users {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
   max-width: 1200px;

@@ -1,4 +1,4 @@
-import {UserActionTypes, UserAction, UserState} from "../../types/user";
+import {UserActionTypes, UserAction, UserState} from '../../types/user';
 
 const initialState: UserState = {
     users: [],
@@ -6,10 +6,9 @@ const initialState: UserState = {
     error: null,
     search: '',
     searchData: [],
-    isOpen:false,
-    modal:{}
+    isOpen: false,
+    modal: {}
 }
-
 
 export const userReducer = (state = initialState, action: UserAction): UserState => {
     switch (action.type) {
@@ -24,9 +23,9 @@ export const userReducer = (state = initialState, action: UserAction): UserState
         case UserActionTypes.FETCH_USERS_SEARCH_DATA:
             return {...state, searchData: action.payload}
         case UserActionTypes.FETCH_USERS_SEARCH_RESET:
-            return {...state, search:'', searchData:[]}
+            return {...state, search: '', searchData: []}
         case UserActionTypes.MODAL_USERS:
-            return {...state, modal:action.payload}
+            return {...state, modal: action.payload}
         default:
             return state
     }

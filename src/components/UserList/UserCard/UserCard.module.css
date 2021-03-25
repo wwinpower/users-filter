@@ -1,4 +1,4 @@
-.Card {
+.card {
   background: #FFFFFF;
   box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
   border-radius: 8px;
@@ -11,36 +11,36 @@
   transition: 0.5s;
   position: relative;
 }
-.Card-remove {
+.card__remove {
   position: absolute;
   right: 20px;
   top: 20px;
   color: red;
   cursor: pointer;
 }
-.Card__photo {
+.card__photo {
   width: 112px;
   height: 112px;
   object-fit: cover;
   filter: drop-shadow(0px 7px 15px rgba(189, 189, 189, 0.23));
   border-radius: 50%;
 }
-.Card__content {
+.card__content {
   display: grid;
   gap: 5px;
 }
-.Card__content__name {
+.card__name {
   font-size: 16px;
   font-weight: 500;
   color: #222;
 }
-.Card__content__email a {
+.card__email a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   color: #ccc;
 }
-.Card:hover {
+.card:hover {
   transform: scale(1.1);
   box-shadow: 0px 4px 24px 5px rgba(116, 141, 255, 0.25);
 }

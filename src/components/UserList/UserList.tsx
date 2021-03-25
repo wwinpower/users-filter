@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch, useSelector} from 'react-redux';
 import {
     fetchUsers,
     searchUsers,
@@ -7,10 +7,11 @@ import {
     resetSearchData,
     modalAdd,
     modalRemove,
-    deleteUser
-} from "../../store/action-creators/user";
+    deleteUser,
+    deleteFilteredUser
+} from '../../store/action-creators/user';
 
-import classes from "./UserList.module.scss";
+import classes from './UserList.module.scss';
 import UserCard from './UserCard/UserCard';
 import Search from '../Search/Search';
 import Loader from '../Loader/Loader';
@@ -41,14 +42,15 @@ const UserList: React.FC = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchUsers())
+        dispatch(fetchUsers());
     }, [])
 
 
     const handlerChangeSearch = (e: React.ChangeEvent<HTMLInputElement>): void => {
-        let str = e.target.value.toLowerCase()
+        let str = e.target.value.toLowerCase();
 
-        dispatch(searchUsers(str))
+        dispatch(searchUsers(str));
+
         const newArr = users
             .filter(
                 item =>
@@ -78,12 +80,12 @@ const UserList: React.FC = () => {
                     email: newEmail,
                     username: newUserName
                 }
-            })
-        dispatch(searchUsersAdd(newArr))
+            });
+        dispatch(searchUsersAdd(newArr));
     }
 
     const handlerResetSearchData = () => {
-        dispatch(resetSearchData())
+        dispatch(resetSearchData());
     }
 
     const open = (id: number) => {
@@ -92,31 +94,44 @@ const UserList: React.FC = () => {
         dispatch(modalAdd({
             company: filtered.company.name,
             address: filtered.address.street
-        }))
+        }));
     }
 
     const close = () => {
-        dispatch(modalRemove())
+        dispatch(modalRemove());
+    }
+
+    const removeFilteredUser = (id: number) => {
+        let data = [...searchData];
+
+        data = data.filter((user) => user.id !== id);
+
+        dispatch(deleteFilteredUser(data));
+
+        removeUser(id)
     }
 
     const removeUser = (id: number) => {
-        let arr = [...users];
+        let data = [...users];
 
-            arr = arr.filter((user)=> user.id !== id)
+        data = data.filter((user) => user.id !== id);
 
-        dispatch(deleteUser(arr))
+        dispatch(deleteUser(data));
     }
 
     return (
         <>
-            <section className={classes.search}>
-                <Search onChange={handlerChangeSearch} onClick={handlerResetSearchData} search={search}/>
-            </section>
+            <Search
+                onChange={handlerChangeSearch}
+                onClick={handlerResetSearchData}
+                search={search}
+            />
+
             {
                 !error ?
                     !loading ?
                         (<Loader/>)
-                        : <section className={classes['UserList']}>
+                        : <section className={classes['users']}>
                             {
 
                                 search.length > 0
@@ -125,7 +140,7 @@ const UserList: React.FC = () => {
                                             user={user}
                                             key={user.id}
                                             open={open}
-                                            removeUser={removeUser}
+                                            removeUser={removeFilteredUser}
                                         />
                                     ))
                                     : users.map(user => (
@@ -141,7 +156,6 @@ const UserList: React.FC = () => {
                         </section>
                     : <h2 className={classes['error']}>{error}</h2>
             }
-
             {
                 Object.keys(modal).length !== 0
                     ? <UserModal

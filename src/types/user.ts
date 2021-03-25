@@ -2,10 +2,10 @@ export interface UserState {
     users: any[];
     loading: boolean;
     error: null | string;
-    search:string,
-    searchData:any[],
-    isOpen:boolean,
-    modal:object
+    search: string,
+    searchData: any[],
+    isOpen: boolean,
+    modal: object
 }
 
 export enum UserActionTypes {
@@ -14,8 +14,8 @@ export enum UserActionTypes {
     FETCH_USERS_ERROR = 'FETCH_USERS_ERROR',
     FETCH_USERS_SEARCH_INPUT = 'FETCH_USERS_SEARCH_INPUT',
     FETCH_USERS_SEARCH_DATA = 'FETCH_USERS_SEARCH_DATA',
-    FETCH_USERS_SEARCH_RESET= 'FETCH_USERS_SEARCH_RESET',
-    MODAL_USERS= 'MODAL_USERS',
+    FETCH_USERS_SEARCH_RESET = 'FETCH_USERS_SEARCH_RESET',
+    MODAL_USERS = 'MODAL_USERS',
 }
 
 interface FetchUsersAction {
@@ -42,13 +42,20 @@ interface FetchSearchDataUsersAction {
     payload: any[];
 }
 
-interface FetchSearchDataResetAction  {
+interface FetchSearchDataResetAction {
     type: UserActionTypes.FETCH_USERS_SEARCH_RESET;
 }
 
-interface ModalUsers  {
+interface ModalUsers {
     type: UserActionTypes.MODAL_USERS;
     payload: object;
 }
 
-export type UserAction = FetchUsersAction | FetchUsersErrorAction | FetchUsersSuccessAction | FetchSearchUsersAction | FetchSearchDataUsersAction | FetchSearchDataResetAction | ModalUsers;
+export type UserAction =
+    FetchUsersAction
+    | FetchUsersErrorAction
+    | FetchUsersSuccessAction
+    | FetchSearchUsersAction
+    | FetchSearchDataUsersAction
+    | FetchSearchDataResetAction
+    | ModalUsers;
